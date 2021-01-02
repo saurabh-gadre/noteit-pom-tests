@@ -20,8 +20,8 @@ export class LoginPageObject{
     }
 
     public async loginWithRedirect(t: TestController, redirectUrl?: string){
-        await t.typeText(this._userNameInput, "john.doe");
-        await t.typeText(this._passwordInput, "password123");
+        await t.typeText(this._userNameInput, "username");
+        await t.typeText(this._passwordInput, "password");
         await t.click(this._loginButton);
         if(redirectUrl){
             await t.navigateTo(redirectUrl);
