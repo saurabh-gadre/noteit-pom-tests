@@ -9,7 +9,7 @@ export class FeedBackPageObject{
     private readonly _emailValidationLabel = Selector('label').withText('Email');
     private readonly _submitBtn            = Selector('.e2e-send-feedback-btn');
     private readonly _errorMessage         = Selector(".alert.alert-danger");
-    private readonly _successMessage        = Selector(".alert.alert-success");
+    private readonly _successMessage       = Selector(".alert.alert-success");
     
     public async fillForm(t: TestController, email: string, rating: string, feeback?: string){
         await t.typeText(this._emailInput, email);
@@ -28,7 +28,7 @@ export class FeedBackPageObject{
     }
 
     public get successMessage(): Promise<string>{
-        return this._successAlert.innerText;
+        return this._successMessage.innerText;
     }
 
     public get errorMessage(): Promise<string>{

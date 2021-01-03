@@ -1,0 +1,13 @@
+{
+    "src":["./fixtures/"],
+    "browsers" : ["chrome:headless","firefox:headless"],
+    "screenshots":{
+        "fullPage": true,
+        "takeOnFails": true,
+        "pathPattern":"${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.png"
+    },
+    "reporter":{
+            "name":"json",
+            "output":"reports/report.json"
+    }
+}

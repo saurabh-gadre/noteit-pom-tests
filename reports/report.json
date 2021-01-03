@@ -1,0 +1,105 @@
+{
+  "startTime": "2021-01-02T16:02:37.201Z",
+  "endTime": "2021-01-02T16:03:31.613Z",
+  "userAgents": [
+    "Chrome 87.0.4280.88 / Windows 10",
+    "Firefox 77.0 / Windows 10"
+  ],
+  "passed": 7,
+  "total": 8,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "Feedback Fixture",
+      "path": "D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\fixtures\\feeback.fixture.ts",
+      "meta": {},
+      "tests": [
+        {
+          "name": "should allow user to submit Feedback ",
+          "meta": {},
+          "errs": [],
+          "durationMs": 18630,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "should display error when email is invalid",
+          "meta": {},
+          "errs": [],
+          "durationMs": 18663,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Login Fixture",
+      "path": "D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\fixtures\\login.fixture.ts",
+      "meta": {},
+      "tests": [
+        {
+          "name": "should display info alert box",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4695,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "should contain correct text for login form",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4872,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "should allow user to login",
+          "meta": {},
+          "errs": [],
+          "durationMs": 8472,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "should allow user to logout",
+          "meta": {},
+          "errs": [],
+          "durationMs": 15526,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Notes Fixture",
+      "path": "D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\fixtures\\notes.fixture.ts",
+      "meta": {},
+      "tests": [
+        {
+          "name": "should allow user to filter Notes",
+          "meta": {},
+          "errs": [],
+          "durationMs": 13358,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "should allow user to delete Notes",
+          "meta": {},
+          "errs": [
+            "AssertionError: expected 3 to deeply equal 4\n\n+ expected - actual\n\n-3\n+4\n\n\nBrowser: Chrome 87.0.4280.88 / Windows 10\nScreenshot: D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\screenshots\\2021-01-02_21-32-37\\test-8\\Chrome_87.0.4280.88_Windows_10\\errors\\1.png\n\n   23 |    console.log(\"Test Complete\");\n   24 |});\n   25 |\n   26 |test('should allow user to delete Notes', async (t: TestController) => {\n   27 |    await notesPage.deleteExistingNote(t);\n > 28 |    await t.expect(notesPage.noteCount).eql(4);\n   29 |    console.log(\"Test Complete\");\n   30 |});\n\n   at <anonymous> (D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\fixtures\\notes.fixture.ts:28:41)\n   at fulfilled (D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\fixtures\\notes.fixture.ts:5:58)",
+            "AssertionError: expected 3 to deeply equal 4\n\n+ expected - actual\n\n-3\n+4\n\n\nBrowser: Firefox 77.0 / Windows 10\n\n   23 |    console.log(\"Test Complete\");\n   24 |});\n   25 |\n   26 |test('should allow user to delete Notes', async (t: TestController) => {\n   27 |    await notesPage.deleteExistingNote(t);\n > 28 |    await t.expect(notesPage.noteCount).eql(4);\n   29 |    console.log(\"Test Complete\");\n   30 |});\n\n   at <anonymous> (D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\fixtures\\notes.fixture.ts:28:41)\n   at fulfilled (D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\fixtures\\notes.fixture.ts:5:58)"
+          ],
+          "durationMs": 26144,
+          "screenshotPath": "D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\screenshots\\2021-01-02_21-32-37\\test-8\\Chrome_87.0.4280.88_Windows_10\\errors\\1.png",
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Was unable to maximize the window due to an error.\n\nno such window: Unable to locate window: undefined",
+    "Was unable to take a screenshot due to an error.\n\nError: no such window: Unable to locate window: undefined\n    at MarionetteClient._throwMarionetteError (D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\node_modules\\testcafe\\src\\browser\\provider\\built-in\\dedicated\\firefox\\marionette-client\\index.js:132:15)\n    at MarionetteClient._getResponse (D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\node_modules\\testcafe\\src\\browser\\provider\\built-in\\dedicated\\firefox\\marionette-client\\index.js:191:18)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at MarionetteClient._switchToWindow (D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\node_modules\\testcafe\\src\\browser\\provider\\built-in\\dedicated\\firefox\\marionette-client\\index.js:136:9)\n    at MarionetteClient._getActiveWindowHandle (D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\node_modules\\testcafe\\src\\browser\\provider\\built-in\\dedicated\\firefox\\marionette-client\\index.js:148:13)\n    at MarionetteClient._ensureActiveWindow (D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\node_modules\\testcafe\\src\\browser\\provider\\built-in\\dedicated\\firefox\\marionette-client\\index.js:168:18)\n    at MarionetteClient._request (D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\node_modules\\testcafe\\src\\browser\\provider\\built-in\\dedicated\\firefox\\marionette-client\\index.js:175:9)\n    at MarionetteClient._getScreenshotRawData (D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\node_modules\\testcafe\\src\\browser\\provider\\built-in\\dedicated\\firefox\\marionette-client\\index.js:197:16)\n    at MarionetteClient.getScreenshotData (D:\\Projects_Demo\\TestCafe\\TestCafe-Prac\\noteit-pom-tests\\node_modules\\testcafe\\src\\browser\\provider\\built-in\\dedicated\\firefox\\marionette-client\\index.js:233:27)"
+  ]
+}

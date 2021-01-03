@@ -25,6 +25,6 @@ test('should allow user to filter Notes', async (t: TestController) => {
 
 test('should allow user to delete Notes', async (t: TestController) => {
     await notesPage.deleteExistingNote(t);
-    await t.expect(notesPage.noteCount).eql(3);
+    await t.expect(notesPage.noteCount).eql(4);
     console.log("Test Complete");
 });
