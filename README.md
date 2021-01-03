@@ -12,4 +12,4 @@ Start the app by executing the following command npm run start
 
 Run the test
 Navigate to the root folder
-npm run test
+> node main.ts --user username --pwd password
